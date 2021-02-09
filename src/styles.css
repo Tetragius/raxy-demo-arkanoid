@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+
+.game {
+  position: relative;
+  border: 1px solid black;
+  background: rgb(87, 87, 87);
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px black;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(106, 106, 106, 1) 68%,
+    rgba(37, 37, 37, 1) 100%
+  );
+}
+
+.brik {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(197, 197, 197);
+  box-shadow: 0px 11px 0px 0px black;
+}
+
+.bit {
+  position: absolute;
+  width: 300px;
+  height: 8px;
+  background-color: rgb(197, 197, 197);
+  box-shadow: 0px 11px 13px black;
+}
+
+.score {
+  margin: 16px;
+  font-size: 18px;
+}
