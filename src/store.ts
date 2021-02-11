@@ -21,7 +21,7 @@ interface IBall extends IBox {
 
 interface IGame {
   game: IBox;
-  bricks: IBox[];
+  bricks: IBrick[];
   bit: IBox;
   base: IBox;
   ball: IBall;

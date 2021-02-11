@@ -1,25 +1,49 @@
 {
-  "name": "raxy-demo-arkanoid",
-  "version": "2.0.0",
-  "description": "",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
-    "@tetragius/raxy-react": "1.0.10",
+    "@babel/plugin-transform-arrow-functions": "^7.12.13",
+    "@babel/plugin-transform-classes": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "@babel/polyfill": "^7.12.1",
+    "@tetragius/raxy-polyfill": "^1.0.2",
+    "@tetragius/raxy-react": "^1.0.13",
     "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-scripts": "4.0.0"
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-proposal-decorators": "^7.12.13",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.13",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
-    "typescript": "4.1.3"
+    "@webpack-cli/init": "^1.1.3",
+    "babel": "^6.23.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^5.0.2",
+    "html-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.1.3",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "webpack serve",
+    "build": "webpack",
+    "init": "webpack init"
   },
   "browserslist": [
     ">0.2%",

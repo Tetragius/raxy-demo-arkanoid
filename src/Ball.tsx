@@ -2,7 +2,7 @@ import React, { forwardRef } from "react";
 import { useRaxy } from "./store";
 
 const Ball = forwardRef((props, ref: any) => {
-  const { state } = useRaxy((store) => ({ ball: store.ball }));
+  const { state } = useRaxy((store) => ({ ball: store.ball, x: store.ball.x }));
 
   return (
     <div

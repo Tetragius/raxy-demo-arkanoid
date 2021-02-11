@@ -49,9 +49,9 @@ const checkWindow = (
 
 subscribe("update", (e) => {
   const a = e.detail.store.ball.a;
-  const x = e.detail.store.ball.x;
-  const x0 = e.detail.store.base.x;
-  const y0 = e.detail.store.base.y;
+  const x = e.detail.store.ball.x ?? 0;
+  const x0 = e.detail.store.base.x ?? 0;
+  const y0 = e.detail.store.base.y ?? 0;
   const k = e.detail.store.ball.k;
   if (!e.detail.store.ball.stick) {
     e.detail.store.ball.x = x + k * 1;
@@ -66,8 +66,8 @@ subscribe("update", (e) => {
       x,
       y,
       a,
-      e.detail.store.bit.x,
-      e.detail.store.bit.width
+      e.detail.store.bit.x ?? 0,
+      e.detail.store.bit.width?? 0
     );
   } else {
     e.detail.store.base.y = x * Math.tan(a) - h;

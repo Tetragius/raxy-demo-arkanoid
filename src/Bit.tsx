@@ -2,7 +2,7 @@ import React, { forwardRef, useCallback, useEffect } from "react";
 import { useRaxy } from "./store";
 
 const Bit = forwardRef((props, ref: any) => {
-  const { state, store } = useRaxy((store) => ({ bit: store.bit }));
+  const { state, store } = useRaxy((store) => ({ bit: store.bit, x: store.bit.x }));
 
   const move = useCallback((e) => {
     state.bit.x = e.x;
